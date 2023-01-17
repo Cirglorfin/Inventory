@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Errores del login-->
+    <string name="errEmailEmpty">Email incorrecto</string>
+    <string name="errLogin">Usuario no existe</string>
+</resources>

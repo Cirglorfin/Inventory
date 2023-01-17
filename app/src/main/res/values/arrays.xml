@@ -1,0 +1,17 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="ringtone_entries">
+        <item>Freezing Moon</item>
+        <item>CowboysFromHell</item>
+    </string-array>
+
+    <string-array name="ringtone_values">
+        <item>FrMn</item>
+        <item>CBH</item>
+    </string-array>
+    <string-array name="tipo">
+        <item>@string/publico</item>
+        <item>@string/privado</item>
+
+    </string-array>
+</resources>

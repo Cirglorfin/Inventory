@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tvAppNameMarginTop">100dp</dimen>
+    <dimen name="imgLogoWidth">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="m10dp">10dp</dimen>
+    <dimen name="m5dp">5dp</dimen>
+    <dimen name="ts20dp">20dp</dimen>
+</resources>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.inventory.ui.MainActivity">
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="@string/settingsFragment"
+        />
+    <item
+        android:id="@+id/dependencyListFragment"
+        android:title="@string/dependencyListFragment"
+        />
+    <item
+        android:id="@+id/sectionListFragment"
+        android:title="@string/sectionListFragment"
+        />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="90"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+</menu>

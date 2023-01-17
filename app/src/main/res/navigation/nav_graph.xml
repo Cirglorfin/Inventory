@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SplashFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.inventory.ui.login.LoginFragment"
+        android:label="@string/FragmentLogin"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_LoginFragment_to_singUpFragment"
+            app:destination="@id/singUpFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SplashFragment"
+        android:name="com.example.inventory.ui.SplashFragment"
+        android:label="@string/FragmentSplash"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/SplashFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_SplashFragment_to_dashBoardFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/SplashFragment"
+            app:destination="@id/dashBoardFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.inventory.ui.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="com.example.inventory.ui.SingUpFragment"
+        android:label="fragment_sing_up"
+        tools:layout="@layout/fragment_sing_up" />
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.inventory.ui.DashboardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashBoardFragment_to_addInventoryFragment"
+            app:destination="@id/addInventoryFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_dependencyListFragment"
+            app:destination="@id/dependencyListFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_sectionListFragment"
+            app:destination="@id/sectionListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addInventoryFragment"
+        android:name="com.example.inventory.ui.inventory.SettingInventoryFragment"
+        android:label="fragment_add_inventory"
+        tools:layout="@layout/fragment_settings_inventory" />
+    <fragment
+        android:id="@+id/dependencyListFragment"
+        android:name="com.example.inventory.ui.dependency.DependencyListFragment"
+        android:label="DependencyListFragment" >
+        <action
+            android:id="@+id/action_dependencyListFragment_to_dependencyAddEditFragment"
+            app:destination="@id/dependencyAddEditFragment" />
+        <action
+            android:id="@+id/action_dependencyListFragment_to_baseFragmentDialog"
+            app:destination="@id/baseFragmentDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionListFragment"
+        android:name="com.example.inventory.ui.section.SectionListFragment"
+        android:label="fragment_section_list"
+        tools:layout="@layout/fragment_section_list" />
+    <fragment
+        android:id="@+id/dependencyAddEditFragment"
+        android:name="com.example.inventory.ui.dependency.DependencyManageFragment"
+        android:label="DependencyAddEditFragment" />
+    <dialog
+        android:id="@+id/baseFragmentDialog"
+        android:name="com.example.inventory.ui.base.BaseFragmentDialog"
+        android:label="BaseFragmentDialog" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.inventory.ui.prefs.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>
