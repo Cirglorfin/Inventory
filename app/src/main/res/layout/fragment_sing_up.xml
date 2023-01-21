@@ -1,33 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.lodge.ui.singup.SingUpViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.SingUpFragment">
+    tools:context="com.example.lodge.ui.singup.SingUpFragment">
+<!-- <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/correo"
+                android:text="@={viewmodel.email}"
+                android:textColorHint="@color/black"
+                app:errorEnabled="true"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tiC"
+        style="@style/TextInputLayout2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="16dp"
-
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
         app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleSingUp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Correo" />
+            android:hint="@string/correo"
+            android:text="@={viewmodel.email}"
+            android:textColorHint="@color/black"
+            app:errorEnabled="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tiU"
-
+        style="@style/TextInputLayout2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -38,13 +65,18 @@
         app:layout_constraintTop_toBottomOf="@+id/tiC">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Usuario" />
+            android:hint="Nombre"
+            android:text="@={viewmodel.name}"
+            android:textColorHint="@color/black"
+            app:errorEnabled="true"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tiP"
+        style="@style/TextInputLayout2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -53,13 +85,17 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
         app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toBottomOf="@+id/tiU">
+        app:layout_constraintTop_toBottomOf="@+id/tiU"
+        app:errorEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieContraseña1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Contraseña"
             android:inputType="textPassword"
-            android:hint="Contraseña" />
+            android:text="@={viewmodel.password}"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.constraintlayout.widget.Guideline
@@ -76,10 +112,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/lindrakitrial"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-light"
         android:text="@string/tvSingUp"
-        android:textSize="60dp"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -97,54 +133,62 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-
+        style="@style/TextInputLayout2"
         app:endIconMode="password_toggle"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
         app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toBottomOf="@+id/tiP">
+        app:layout_constraintTop_toBottomOf="@+id/tiP"
+        app:errorEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieContraseña2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Confirmar contraseña"
             android:inputType="textPassword"
-            android:hint="Confirmar contraseña" />
+            android:text="@={viewmodel.password2}"
+           />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <CheckBox
-        android:id="@+id/cbTerms"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Aceptar los términos de uso"
-
-        app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toBottomOf="@+id/tiConfirP" />
-
-    <CheckBox
-        android:id="@+id/cbNoti"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Recibir notificaciones"
-
-        app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toBottomOf="@+id/cbTerms" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        android:src="@drawable/ic_action_name"
+        android:layout_gravity="center"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/selector_btlogin"
+        android:onClick="@{()->viewmodel.validateCredentials()}"
+        android:text="@string/singUp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        android:contentDescription="@string/fab"/>
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tiConfirP" />
+    <!--
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+
+            android:text="Aceptar los términos de uso"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/glStart"
+            app:layout_constraintTop_toBottomOf="@+id/tiConfirP" />
+
+        <CheckBox
+            android:id="@+id/cbNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Recibir notificaciones"
+
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/glStart"
+            app:layout_constraintTop_toBottomOf="@+id/cbTerms" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

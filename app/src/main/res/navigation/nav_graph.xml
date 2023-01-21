@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/LoginFragment"
-        android:name="com.example.inventory.ui.login.LoginFragment"
-        android:label="@string/FragmentLogin"
+        android:name="com.example.lodge.ui.login.LoginFragment"
+        android:label=""
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_LoginFragment_to_singUpFragment"
@@ -19,8 +19,8 @@
     </fragment>
     <fragment
         android:id="@+id/SplashFragment"
-        android:name="com.example.inventory.ui.SplashFragment"
-        android:label="@string/FragmentSplash"
+        android:name="com.example.lodge.ui.SplashFragment"
+        android:label=""
         tools:layout="@layout/fragment_splash">
 
         <action
@@ -38,60 +38,56 @@
     </fragment>
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.example.inventory.ui.MainActivity"
-        android:label="activity_main"
+        android:name="com.example.lodge.ui.MainActivity"
+        android:label=""
         tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/singUpFragment"
-        android:name="com.example.inventory.ui.SingUpFragment"
-        android:label="fragment_sing_up"
+        android:name="com.example.lodge.ui.singup.SingUpFragment"
+        android:label=""
         tools:layout="@layout/fragment_sing_up" />
     <fragment
         android:id="@+id/dashBoardFragment"
-        android:name="com.example.inventory.ui.DashboardFragment"
-        android:label="fragment_dash_board"
+        android:name="com.example.lodge.ui.DashboardFragment"
+        android:label=""
         tools:layout="@layout/fragment_dashboard" >
         <action
-            android:id="@+id/action_dashBoardFragment_to_addInventoryFragment"
-            app:destination="@id/addInventoryFragment" />
-        <action
-            android:id="@+id/action_dashBoardFragment_to_dependencyListFragment"
-            app:destination="@id/dependencyListFragment" />
+            android:id="@+id/action_dashBoardFragment_to_serverListFragment"
+            app:destination="@id/serverListFragment" />
         <action
             android:id="@+id/action_dashBoardFragment_to_sectionListFragment"
             app:destination="@id/sectionListFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
+
     <fragment
-        android:id="@+id/addInventoryFragment"
-        android:name="com.example.inventory.ui.inventory.SettingInventoryFragment"
-        android:label="fragment_add_inventory"
-        tools:layout="@layout/fragment_settings_inventory" />
-    <fragment
-        android:id="@+id/dependencyListFragment"
-        android:name="com.example.inventory.ui.dependency.DependencyListFragment"
-        android:label="DependencyListFragment" >
+        android:id="@+id/serverListFragment"
+        android:name="com.example.lodge.ui.server.ServerListFragment"
+        android:label="" >
         <action
-            android:id="@+id/action_dependencyListFragment_to_dependencyAddEditFragment"
-            app:destination="@id/dependencyAddEditFragment" />
+            android:id="@+id/action_serverListFragment_to_serverManageFragment"
+            app:destination="@id/serverManageFragment" />
         <action
-            android:id="@+id/action_dependencyListFragment_to_baseFragmentDialog"
+            android:id="@+id/action_serverListFragment_to_baseFragmentDialog"
             app:destination="@id/baseFragmentDialog" />
     </fragment>
     <fragment
         android:id="@+id/sectionListFragment"
-        android:name="com.example.inventory.ui.section.SectionListFragment"
-        android:label="fragment_section_list"
+        android:name="com.example.lodge.ui.section.SectionListFragment"
+        android:label=""
         tools:layout="@layout/fragment_section_list" />
     <fragment
-        android:id="@+id/dependencyAddEditFragment"
-        android:name="com.example.inventory.ui.dependency.DependencyManageFragment"
-        android:label="DependencyAddEditFragment" />
+        android:id="@+id/serverManageFragment"
+        android:name="com.example.lodge.ui.server.ServerManageFragment"
+        android:label="" />
     <dialog
         android:id="@+id/baseFragmentDialog"
-        android:name="com.example.inventory.ui.base.BaseFragmentDialog"
-        android:label="BaseFragmentDialog" />
+        android:name="com.example.lodge.ui.base.BaseFragmentDialog"
+        android:label="" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.inventory.ui.prefs.SettingsFragment"
+        android:name="com.example.lodge.ui.prefs.SettingsFragment"
         android:label="SettingsFragment" />
 </navigation>

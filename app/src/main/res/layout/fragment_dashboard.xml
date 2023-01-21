@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.DashboardFragment">
+    tools:context="com.example.lodge.ui.DashboardFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -19,14 +19,15 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:contentDescription="@string/action_settings"
-            android:src="@drawable/inventorio" />
+            android:src="@drawable/ic_email"
+             />
 
         <ImageButton
             android:id="@+id/imgDependency"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/action_settings"
-            android:src="@drawable/dependency" />
+         android:src="@drawable/ic_email" />
     </TableRow>
 
     <TableRow

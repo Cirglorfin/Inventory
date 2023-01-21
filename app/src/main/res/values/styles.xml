@@ -22,8 +22,23 @@
         <item name="android:paddingTop">5dp</item>
         <item name="errorTextColor">@color/error</item>
     </style>
+    <style name="TextInputLayout2">
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="hintTextColor">@color/colorsecondary</item>
+
+        <item name="android:background">@color/white</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="errorTextColor">@color/error</item>
+    </style>
     <style name="MyButtonStyle" parent="android:Widget.Material.Button">
         <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="checkbox">
+
     </style>
 
 

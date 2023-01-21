@@ -5,7 +5,7 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.example.inventory.ui.login.LoginViewModel" />
+            type="com.example.lodge.ui.login.LoginViewModel" />
     </data>
 <LinearLayout
 
@@ -15,7 +15,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:padding="20dp"
-    tools:context="com.example.inventory.ui.login.LoginFragment">
+    tools:context="com.example.lodge.ui.login.LoginFragment">
 
     <TextView
         android:layout_width="wrap_content"

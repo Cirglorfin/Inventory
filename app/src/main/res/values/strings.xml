@@ -36,7 +36,7 @@
     <string name="reg_strate">Regístrate</string>
     <string name="editar_grupo">Editar server</string>
     <string name="aplicar_cambios">Aplicar cambios</string>
-    <string name="datos_separados_por_quot_quot">* Datos separados por \";\"</string>
+
     <string name="nombre_del_grupo">Nombre del server</string>
     <string name="administradores">Administradores</string>
     <string name="miembros">Miembros</string>
@@ -72,58 +72,47 @@
 
 
 
-    <string name="FragmentLogin">Fragment LogIn</string>
-    <string name="FragmentSplash">Fragment Splash</string>
+    <string name="FragmentLogin" translatable="false">Fragment LogIn</string>
+    <string name="FragmentSplash" translatable="false">Fragment Splash</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <string name="tvSingUp">Registro</string>
     <string name="fab">Botón OK</string>
     <string name="errNameEmpty">Nombre vacío</string>
-    <string name="errShortNameEmpty">Nombre corto vacío</string>
-    <string name="errShortNameFormat">Formato de nombre corto incorrecto</string>
+
     <string name="errDuplicate">error</string>
-    <string name="title_delete_dependency">Eliminar dependencia</string>
+
     <string name="message_delete">¿Quiere eliminar el elemento %1$s?</string>
     <string name="undo">deshacer</string>
     <string name="action_dependency_orderById">Ordenar por Id</string>
     <string name="action_logout">Cerrar sesión</string>
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
 
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="title_account">Cuenta</string>
-    <string name="title_email">Email</string>
-    <string name="key_email">email</string>
-    <string name="key_password">password</string>
+    <string name="title_email" translatable="false">Email</string>
+    <string name="key_email" translatable="false">email</string>
+    <string name="key_password" translatable="false">password</string>
     <string name="title_password">Contraseña</string>
-    <string name="key_account">account</string>
-    <string name="summary_account">Bla</string>
+    <string name="key_account" translatable="false">account</string>
     <string name="account_header">Información de la cuenta</string>
     <string name="help_header">Ayuda</string>
     <string name="help_center">Centro de ayuda</string>
-    <string name="key_help_center">help_center</string>
+    <string name="key_help_center" translatable="false">help_center</string>
     <string name="title_privacy_condition">Politicas de privacidad</string>
-    <string name="key_privacy_condition">privacy_condition</string>
-    <string name="key_ringtone">ringtone</string>
+    <string name="key_privacy_condition" translatable="false">privacy_condition</string>
+    <string name="key_ringtone" translatable="false">ringtone</string>
     <string name="tite_ringtone">tono de notificaciones</string>
     <string name="notification_header">Notificaciones</string>
     <string name="title_active_notification">Activar notificaciones</string>
-    <string name="key_active_notification">active_notification</string>
-    <string name="channel_name">channel_inventory</string>
+    <string name="key_active_notification" translatable="false">active_notification</string>
+    <string name="channel_name" translatable="false">channel_lodge</string>
     <string name="channel_description">Canal general para las notificaciones</string>
-    <string name="notify_add_dependency_title">Añadir dependencia</string>
-    <string name="notify_add_dependency_description">Se añadio una dependencia</string>
-    <string name="settingsFragment">settings fragment</string>
-    <string name="dependencyListFragment">dependency list fragment</string>
-    <string name="sectionListFragment">section list fragment</string>
+    <string name="notify_add_server_title">Añadir servidor</string>
+    <string name="notify_add_server_description">Se añadio un servidor</string>
+    <string name="settingsFragment" translatable="false">settings fragment</string>
+    <string name="serverListFragment" translatable="false">server list fragment</string>
+    <string name="sectionListFragment" translatable="false">section list fragment</string>
+    <string name="summary_account">bla</string>
+    <string name="login_user_mail">nombre de usuario o correo electrónico</string>
+    <string name="errSingUp">Usuario ya existe</string>
+    <string name="singUp">Registrar</string>
 </resources>

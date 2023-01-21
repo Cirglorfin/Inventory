@@ -10,5 +10,7 @@
     <color name="colorsecondary">#436468</color>
     <color name="error">#FF0000</color>
     <color name="greydark">#3C3C3C</color>
+    <color name="ic_acton_menu_background">#3DDC84</color>
+    <color name="ic_lodge_background">#000000</color>
 
-    </resources>
+</resources>

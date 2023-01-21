@@ -1,14 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.inventory.ui.MainActivity">
+    tools:context="com.example.lodge.ui.MainActivity">
     <item
         android:id="@+id/settingsFragment"
         android:title="@string/settingsFragment"
         />
     <item
-        android:id="@+id/dependencyListFragment"
-        android:title="@string/dependencyListFragment"
+        android:id="@+id/serverListFragment"
+        android:title="@string/serverListFragment"
         />
     <item
         android:id="@+id/sectionListFragment"
