@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lodge</string>
+    <string name="AboutUsSubTiTle">Student</string>
+    <string name="aboutus">About us...</string>
+
+    <string name="crear_cuenta">Create account</string>
+    <string name="confirmar_contrase_a">Confirm password</string>
+    <string name="crear">Create</string>
+    <string name="correo">Email</string>
+    <string name="recordar_contrase_a">Remeber password</string>
+    <string name="contrase_a">Password</string>
+    <string name="userProfile">User</string>
+
+    <string name="enviar">Send</string>
+    <string name="correo_electr_nico">Email</string>
+    <string name="recuperar_cuenta">Recover account</string>
+
+    <string name="introduce_tu_correo_electr_nico_para_cambiar_la_contrase_a">Enter your email to recover password</string>
+    <string name="iniciar_sesi_n">Log in</string>
+    <string name="usuario_o_correo_electr_nico">User or email</string>
+    <string name="recordar">Remember</string>
+    <string name="olvid_la_contrase_a">Forgot password?</string>
+    <string name="entrar">Log in</string>
+
+    <string name="no_tienes_una_cuenta">You do not have an account? </string>
+    <string name="reg_strate">Sing up</string>
+    <string name="editar_grupo">Edit server</string>
+
+    <string name="aplicar_cambios">Apply changes</string>
+
+
+
+    <string name="nombre_del_grupo">Name server</string>
+
+    <string name="administradores">Administrators</string>
+
+    <string name="miembros">Members</string>
+
+    <string name="descripci_n">Description</string>
+    <string name="etiquetas">"Tags "</string>
+
+    <string name="contacto">Contact</string>
+    <string name="nombre_para_el_contacto">Name contact</string>
+    <string name="editar">Edit</string>
+    <string name="editar_contacto">Edit contact</string>
+    <string name="a_adir_grupo">Add server</string>
+    <string name="crear_grupo">Create server</string>
+    <string name="a_adir">Add</string>
+    <string name="a_adir_contacto">Add contact</string>
+    <string name="publico">Public</string>
+    <string name="privado">Private</string>
+    <string name="errNameEmpty">Name empty</string>
+    <string name="errDuplicate">error</string>
+
+    <string name="Contactos">Contacts</string>
+
+    <string name="id_del_grupo">Id server</string>
+    <string name="imagen">Image</string>
+    <string name="nombre_corto">Short name</string>
+
+    <string name="message_delete">Do you want to delete the element %1$s?</string>
+    <string name="undo">Undo</string>
+    <string name="action_dependency_orderById">Order by id</string>
+    <string name="undoD">"Undo delete "</string>
+    <string name="title_delete_server">Delete server</string>
+    <string name="message_delete_server">Do you want to delete the server %1$s?</string>
+    <string name="fab">ok</string>
+    <string name="tvSingUp">Sing up</string>
+    <string name="action_server_orderById">Order by id</string>
+    <string name="action_logout">Log out</string>
+    <string name="title_account">Account</string>
+    <string name="title_password">Password</string>
+    <string name="account_header">Account information</string>
+    <string name="help_header">Help</string>
+    <string name="help_center">help Center</string>
+    <string name="title_privacy_condition">Privacy politics</string>
+    <string name="tite_ringtone">Notification tone</string>
+    <string name="notification_header">Notifications</string>
+    <string name="title_active_notification">Enable notifications</string>
+    <string name="channel_description">General channel for notifications</string>
+    <string name="notify_add_server_title">Add server</string>
+    <string name="notify_add_server_description">Added a server</string>
+    <string name="errEmailEmpty">Wrong email</string>
+    <string name="errLogin">User does not exists</string>
+    <string name="summary_account">bla</string>
+    <string name="login_user_mail">username or email</string>
+    <string name="errSingUp">user alredy exists</string>
+    <string name="singUp">Sing up</string>
+</resources>
